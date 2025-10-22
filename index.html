@@ -4,11 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guess A Number Game - Datastrukturer og algoritmer</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
     <h1>Guess A Number Game</h1>
 
+    <div id="game" class="container m-5">
+        <p>Welcome to the Guess A Number Game!</p>
+        
+        <form id="guess-form" class="row g-3">
+            <div class="mb-3 col-auto">
+                <input type="number" id="guess-input" placeholder="Enter your guess" class="form-control" />
+            </div>
+            <div class="mb-3 col-auto">
+                <button id ="submit-guess" type="submit" class="btn btn-primary">Submit Guess</button>
+            </div>
+
+            <div>
+                <p>Previous guesses:</p>
+                <ul id="guess-list" class="list-unstyled">
+                    <li>50</li>
+                    <li>75</li>
+                    <li>62</li>
+                </ul>
+            </div>
+
+            <p id="success-message" style="display: none;">Congratulations! You've guessed correctly!</p>
+            <button id="play-again" type="button" class="btn btn-secondary" disabled>Play Again</button>
+        </form>
+        
+    </div>
+
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
