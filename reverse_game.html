@@ -15,12 +15,24 @@
         <form id="guess-form" class="row g-3">
             <div>
                 <p>Previous guesses:</p>
+                <form id="feedback-form" class="d-inline">
                 <ul id="guess-list" class="list-unstyled">
-                    <li>I'm guessing 40 - <span id="guess-feedback">is that 
-                        <button class="btn btn-light -btn-sm" id="too-low">too low</button>,
-                        <button class="btn btn-light -btn-sm" id="too-high">too high</button>,
-                        or <button class="btn btn-light -btn-sm" id="correct">correct</button>?</span></li>
+                    <li>I'm guessing 40 - <div class="d-inline" id="guess-feedback">is that 
+                        <div class="form-check form-check-inline">
+                            <input class="btn-check" type="radio" id="too-low" name="feedback40" value="low">
+                            <label class="btn btn-sml btn-primary" for="too-low">too low</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="btn-check" type="radio" id="too-high" name="feedback40" value="high">
+                            <label class="btn btn-sml btn-primary" for="too-high">too high</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="btn-check" type="radio" id="correct" name="feedback40" value="correct">
+                            <label class="btn btn-sml btn-primary" for="correct">correct</label>
+                        </div>
+                        ?</div></li>
                 </ul>
+                </form>
             </div>
 
             <p id="success-message" style="display: none;">I've finally guessed correctly!</p>
