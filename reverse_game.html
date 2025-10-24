@@ -11,6 +11,7 @@
 
     <div id="game" class="container m-5">
         <p>Think of a number between 1 and 100, and I'll try yo guess it!</p>
+        <button type="button" id="start-game" class="btn btn-success btn-lg mb-3">Start Game</button>
         
         <form id="guess-form" class="row g-3">
             <div>
@@ -20,15 +21,15 @@
                     <li>I'm guessing 40 - <div class="d-inline" id="guess-feedback">is that 
                         <div class="form-check form-check-inline">
                             <input class="btn-check" type="radio" id="too-low" name="feedback40" value="low">
-                            <label class="btn btn-sml btn-primary" for="too-low">too low</label>
+                            <label class="btn btn-sm btn-primary" for="too-low">too low</label>
                         </div>
                         <div class="form-check form-check-inline">
                             <input class="btn-check" type="radio" id="too-high" name="feedback40" value="high">
-                            <label class="btn btn-sml btn-primary" for="too-high">too high</label>
+                            <label class="btn btn-sm btn-primary" for="too-high">too high</label>
                         </div>
                         <div class="form-check form-check-inline">
                             <input class="btn-check" type="radio" id="correct" name="feedback40" value="correct">
-                            <label class="btn btn-sml btn-primary" for="correct">correct</label>
+                            <label class="btn btn-sm btn-primary" for="correct">correct</label>
                         </div>
                         ?</div></li>
                 </ul>
@@ -36,7 +37,7 @@
             </div>
 
             <p id="success-message" style="display: none;">I've finally guessed correctly!</p>
-            <button id="play-again" type="button" class="btn btn-secondary" disabled>Play Again</button>
+            
         </form>
         
     </div>
